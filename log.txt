@@ -1,0 +1,293 @@
+2022/12/22 11:01:12 FEServer 5001: We are trying to listen calls from client: 5001
+2022/12/22 11:01:15 FEServer 5002: We are trying to listen calls from client: 5002
+2022/12/22 11:01:31 Key: 1 and Value: 4
+2022/12/22 11:01:31 Key: 1 and Value: 4
+2022/12/22 11:01:31 Response from server :5001: Put response: %!(EXTRA bool=true)
+2022/12/22 11:01:31 Response from server :5002: Put response: %!(EXTRA bool=true)
+2022/12/22 11:01:47 Response from server :5001: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 11:01:47 Key: 1 and Value: 4
+2022/12/22 11:01:47 Key: 2 and Value: 5
+2022/12/22 11:01:47 Put failed on server :5001 
+2022/12/22 11:01:47 Put failed on server :5002 
+2022/12/22 11:45:38 FEServer 5002: We are trying to listen calls from client: 5002
+2022/12/22 11:45:41 FEServer 5001: We are trying to listen calls from client: 5001
+2022/12/22 11:45:55 Key: 2 and Value: 4
+2022/12/22 11:45:55 Key: 2 and Value: 4
+2022/12/22 11:45:55 Response from server :5001: Put response: %!(EXTRA bool=true)
+2022/12/22 11:45:55 Response from server :5002: Put response: %!(EXTRA bool=true)
+2022/12/22 11:46:05 Response from server :5001: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 11:46:05 Key: 3 and Value: 6
+2022/12/22 11:46:05 Key: 2 and Value: 4
+2022/12/22 11:46:05 Put failed on server :5001 
+2022/12/22 11:46:05 Response from server :5002: Put response: %!(EXTRA bool=true)
+2022/12/22 11:47:23 Response from server :5001: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 11:47:23 We found a value!
+2022/12/22 11:47:23 Response from server :5001: Put response: %!(EXTRA int32=0)
+2022/12/22 11:47:23 Response from server :5002: Put response: %!(EXTRA int32=4)
+2022/12/22 11:52:17 FEServer 5001: We are trying to listen calls from client: 5001
+2022/12/22 11:52:19 FEServer 5002: We are trying to listen calls from client: 5002
+2022/12/22 11:52:31 Key: 2 and Value: 5
+2022/12/22 11:52:31 Key: 2 and Value: 5
+2022/12/22 11:52:31 Response from server :5001: Put response: %!(EXTRA bool=true)
+2022/12/22 11:52:31 Response from server :5002: Put response: %!(EXTRA bool=true)
+2022/12/22 11:52:46 Response from server :5001: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 11:52:46 Key: 2 and Value: 5
+2022/12/22 11:52:46 Key: 3 and Value: 6
+2022/12/22 11:52:46 Put failed on server :5001 
+2022/12/22 11:52:46 Response from server :5002: Put response: %!(EXTRA bool=true)
+2022/12/22 11:52:54 Response from server :5001: Get failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 11:53:46 Response from server :5001: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 11:53:46 Key: 2 and Value: 4
+2022/12/22 11:53:46 Key: 3 and Value: 6
+2022/12/22 11:53:46 Put failed on server :5001 
+2022/12/22 11:53:46 Response from server :5002: Put response: %!(EXTRA bool=true)
+2022/12/22 11:53:50 Response from server :5001: Get failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 12:01:23 FEServer 5001: We are trying to listen calls from client: 5001
+2022/12/22 12:01:25 FEServer 5002: We are trying to listen calls from client: 5002
+2022/12/22 12:01:47 Key: 3 and Value: 5
+2022/12/22 12:01:47 Key: 3 and Value: 5
+2022/12/22 12:01:47 Response from server :5001: Put response: %!(EXTRA bool=true)
+2022/12/22 12:01:47 Response from server :5002: Put response: %!(EXTRA bool=true)
+2022/12/22 12:01:56 Key: 3 and Value: 4
+2022/12/22 12:01:56 Key: 3 and Value: 4
+2022/12/22 12:01:56 Response from server :5001: Put response: %!(EXTRA bool=true)
+2022/12/22 12:01:56 Response from server :5002: Put response: %!(EXTRA bool=true)
+2022/12/22 12:01:59 We found a value!
+2022/12/22 12:01:59 Response from server :5001: Get response: %!(EXTRA int32=4)
+2022/12/22 12:01:59 We found a value!
+2022/12/22 12:01:59 Response from server :5002: Get response: %!(EXTRA int32=4)
+2022/12/22 12:02:03 We found a value!
+2022/12/22 12:02:03 Response from server :5001: Get response: %!(EXTRA int32=4)
+2022/12/22 12:02:03 We found a value!
+2022/12/22 12:02:03 Response from server :5002: Get response: %!(EXTRA int32=4)
+2022/12/22 12:02:22 Key: 3 and Value: 4
+2022/12/22 12:02:22 Key: 1 and Value: 4
+2022/12/22 12:02:22 Response from server :5002: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5002: connect: connection refused")
+2022/12/22 12:02:22 Response from server :5001: Put response: %!(EXTRA bool=true)
+2022/12/22 12:02:22 Put failed on server :5002 
+2022/12/22 12:02:58 We found a value!
+2022/12/22 12:02:58 Response from server :5001: Get response: %!(EXTRA int32=4)
+2022/12/22 12:02:58 Response from server :5001: Get failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5002: connect: connection refused")
+2022/12/22 12:14:47 Server 5002: We are trying to listen calls from client: 5002
+2022/12/22 12:14:49 Server 5001: We are trying to listen calls from client: 5001
+2022/12/22 12:15:02 Key: 2 and Value: 5
+2022/12/22 12:15:02 Key: 2 and Value: 5
+2022/12/22 12:15:02 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 12:15:02 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 12:15:10 Key: 1 and Value: 5
+2022/12/22 12:15:10 Key: 2 and Value: 5
+2022/12/22 12:15:10 Key: 1 and Value: 5
+2022/12/22 12:15:10 Key: 2 and Value: 5
+2022/12/22 12:15:10 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 12:15:10 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 12:15:18 Key: 2 and Value: 5
+2022/12/22 12:15:18 Key: 1 and Value: 7
+2022/12/22 12:15:18 Key: 1 and Value: 7
+2022/12/22 12:15:18 Key: 2 and Value: 5
+2022/12/22 12:15:18 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 12:15:18 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 12:15:32 Key: 13 and Value: 6
+2022/12/22 12:15:32 Key: 2 and Value: 5
+2022/12/22 12:15:32 Key: 1 and Value: 7
+2022/12/22 12:15:32 Response from server :5002: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5002: connect: connection refused")
+2022/12/22 12:15:32 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 12:15:32 Put failed on server :5002 . The response: %!(EXTRA bool=false)
+2022/12/22 12:16:59 We found a value!
+2022/12/22 12:16:59 Response from server :5001: Get response: %!(EXTRA int32=6)
+2022/12/22 12:16:59 Response from server :5001: Get failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5002: connect: connection refused")
+2022/12/22 12:20:58 Server 5002: We are trying to listen calls from client: 5002
+2022/12/22 12:20:59 Server 5001: We are trying to listen calls from client: 5001
+2022/12/22 12:21:12 Key: 2 and Value: 5
+2022/12/22 12:21:12 Key: 2 and Value: 5
+2022/12/22 12:21:12 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 12:21:12 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 12:21:26 Response from server :5001: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 12:21:26 Key: 4 and Value: 6
+2022/12/22 12:21:26 Key: 2 and Value: 5
+2022/12/22 12:21:26 Put failed on server :5001 . The response: %!(EXTRA bool=false)
+2022/12/22 12:21:26 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 12:21:36 Response from server :5001: Get failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 12:21:36 We found a value!
+2022/12/22 12:21:36 Response from server :5002: Get response: %!(EXTRA int32=5)
+2022/12/22 12:21:57 Response from server :5001: Get failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 12:21:57 We found a value!
+2022/12/22 12:21:57 Response from server :5002: Get response: %!(EXTRA int32=6)
+2022/12/22 12:22:03 Response from server :5001: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 12:22:03 Key: 4 and Value: 6
+2022/12/22 12:22:03 Key: 3 and Value: 5
+2022/12/22 12:22:03 Key: 2 and Value: 5
+2022/12/22 12:22:03 Put failed on server :5001 . The response: %!(EXTRA bool=false)
+2022/12/22 12:22:03 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 12:22:07 Response from server :5001: Get failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 12:22:07 We found a value!
+2022/12/22 12:22:07 Response from server :5002: Get response: %!(EXTRA int32=5)
+2022/12/22 12:25:37 Server 5001: We are trying to listen calls from client: 5001
+2022/12/22 12:25:38 Server 5002: We are trying to listen calls from client: 5002
+2022/12/22 12:25:51 Key: 2 and Value: 5
+2022/12/22 12:25:51 Key: 2 and Value: 5
+2022/12/22 12:25:51 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 12:25:51 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 12:25:55 Key: 2 and Value: 5
+2022/12/22 12:25:55 Key: 5 and Value: 1
+2022/12/22 12:25:55 Key: 2 and Value: 5
+2022/12/22 12:25:55 Key: 5 and Value: 1
+2022/12/22 12:25:55 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 12:25:55 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 12:26:03 We found a value!
+2022/12/22 12:26:03 Response from server :5001: Get response: %!(EXTRA int32=5)
+2022/12/22 12:26:03 Response from server :5002: Get failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5002: connect: connection refused")
+2022/12/22 12:26:10 We found a value!
+2022/12/22 12:26:10 Response from server :5001: Get response: %!(EXTRA int32=5)
+2022/12/22 12:26:10 Response from server :5002: Get failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5002: connect: connection refused")
+2022/12/22 12:26:31 Response from server :5001: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 12:26:31 Response from server :5002: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5002: connect: connection refused")
+2022/12/22 12:26:31 Put failed on server :5001 . The response: %!(EXTRA bool=false)
+2022/12/22 12:26:31 Put failed on server :5002 . The response: %!(EXTRA bool=false)
+2022/12/22 12:26:36 Response from server :5001: Get failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 12:26:36 Response from server :5002: Get failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5002: connect: connection refused")
+2022/12/22 12:26:44 Response from server :5001: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5001: connect: connection refused")
+2022/12/22 12:26:44 Response from server :5002: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5002: connect: connection refused")
+2022/12/22 12:26:44 Put failed on server :5001 . The response: %!(EXTRA bool=false)
+2022/12/22 12:26:44 Put failed on server :5002 . The response: %!(EXTRA bool=false)
+2022/12/22 13:57:12 Server 5001: We are trying to listen calls from client: 5001
+2022/12/22 13:57:14 Server 5002: We are trying to listen calls from client: 5002
+2022/12/22 13:57:51 Key: 3 and Value: 6
+2022/12/22 13:57:51 Key: 3 and Value: 6
+2022/12/22 13:57:51 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 13:57:51 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 13:57:55 We found a value!
+2022/12/22 13:57:55 Response from server :5001: Get response: %!(EXTRA int32=6)
+2022/12/22 13:58:00 We found a value!
+2022/12/22 13:58:00 Response from server :5002: Get response: %!(EXTRA int32=6)
+2022/12/22 13:59:55 Key: 3 and Value: 6
+2022/12/22 13:59:55 Key: 1 and Value: 4
+2022/12/22 13:59:55 Key: 3 and Value: 6
+2022/12/22 13:59:55 Key: 1 and Value: 4
+2022/12/22 13:59:55 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 13:59:55 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 14:00:02 We found a value!
+2022/12/22 14:00:02 Response from server :5001: Get response: %!(EXTRA int32=4)
+2022/12/22 14:00:06 We found a value!
+2022/12/22 14:00:06 Response from server :5001: Get response: %!(EXTRA int32=4)
+2022/12/22 14:00:07 We found a value!
+2022/12/22 14:00:07 Response from server :5002: Get response: %!(EXTRA int32=4)
+2022/12/22 14:00:11 We found a value!
+2022/12/22 14:00:11 Response from server :5002: Get response: %!(EXTRA int32=4)
+2022/12/22 14:01:31 Key: 3 and Value: 6
+2022/12/22 14:01:31 Key: 1 and Value: 10
+2022/12/22 14:01:31 Key: 3 and Value: 6
+2022/12/22 14:01:31 Key: 1 and Value: 10
+2022/12/22 14:01:31 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 14:01:31 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 14:01:35 We found a value!
+2022/12/22 14:01:35 Response from server :5001: Get response: %!(EXTRA int32=10)
+2022/12/22 14:01:35 Key: 3 and Value: 6
+2022/12/22 14:01:35 Key: 1 and Value: 4
+2022/12/22 14:01:35 Key: 1 and Value: 4
+2022/12/22 14:01:35 Key: 3 and Value: 6
+2022/12/22 14:01:35 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 14:01:35 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 14:01:40 We found a value!
+2022/12/22 14:01:40 Response from server :5002: Get response: %!(EXTRA int32=4)
+2022/12/22 14:05:45 We found a value!
+2022/12/22 14:05:45 Response from server :5001: Get response: %!(EXTRA int32=4)
+2022/12/22 14:05:50 We found a value!
+2022/12/22 14:05:50 Response from server :5002: Get response: %!(EXTRA int32=4)
+2022/12/22 14:06:36 Key: 1 and Value: 99
+2022/12/22 14:06:36 Key: 3 and Value: 6
+2022/12/22 14:06:36 Key: 3 and Value: 6
+2022/12/22 14:06:36 Key: 1 and Value: 99
+2022/12/22 14:06:36 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 14:06:36 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 14:06:37 We found a value!
+2022/12/22 14:06:37 Response from server :5001: Get response: %!(EXTRA int32=99)
+2022/12/22 14:06:42 We found a value!
+2022/12/22 14:06:42 Response from server :5002: Get response: %!(EXTRA int32=99)
+2022/12/22 14:07:09 We found a value!
+2022/12/22 14:07:09 Response from server :5001: Get response: %!(EXTRA int32=99)
+2022/12/22 14:07:14 We found a value!
+2022/12/22 14:07:14 Response from server :5002: Get response: %!(EXTRA int32=99)
+2022/12/22 14:07:16 Key: 3 and Value: 6
+2022/12/22 14:07:16 Key: 1 and Value: 200
+2022/12/22 14:07:16 Key: 1 and Value: 200
+2022/12/22 14:07:16 Key: 3 and Value: 6
+2022/12/22 14:07:16 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 14:07:16 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 14:07:19 We found a value!
+2022/12/22 14:07:19 Response from server :5001: Get response: %!(EXTRA int32=200)
+2022/12/22 14:07:24 We found a value!
+2022/12/22 14:07:24 Response from server :5002: Get response: %!(EXTRA int32=200)
+2022/12/22 14:08:45 We found a value!
+2022/12/22 14:08:45 Response from server :5001: Get response: %!(EXTRA int32=6)
+2022/12/22 14:08:46 Key: 3 and Value: 55
+2022/12/22 14:08:46 Key: 1 and Value: 200
+2022/12/22 14:08:46 Key: 3 and Value: 55
+2022/12/22 14:08:46 Key: 1 and Value: 200
+2022/12/22 14:08:46 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 14:08:46 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 14:08:50 We found a value!
+2022/12/22 14:08:50 Response from server :5002: Get response: %!(EXTRA int32=55)
+2022/12/22 14:12:16 We found a value!
+2022/12/22 14:12:16 Response from server :5001: Get response: %!(EXTRA int32=55)
+2022/12/22 14:12:21 We found a value!
+2022/12/22 14:12:21 Response from server :5002: Get response: %!(EXTRA int32=55)
+2022/12/22 14:12:21 Key: 3 and Value: 555
+2022/12/22 14:12:21 Key: 1 and Value: 200
+2022/12/22 14:12:21 Key: 1 and Value: 200
+2022/12/22 14:12:21 Key: 3 and Value: 555
+2022/12/22 14:12:21 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 14:12:21 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 14:41:54 We found a value!
+2022/12/22 14:41:54 Response from server :5001: Get response: %!(EXTRA int32=555)
+2022/12/22 14:41:59 We found a value!
+2022/12/22 14:41:59 Response from server :5002: Get response: %!(EXTRA int32=555)
+2022/12/22 14:42:07 Key: 3 and Value: 4
+2022/12/22 14:42:07 Key: 1 and Value: 200
+2022/12/22 14:42:07 Key: 1 and Value: 200
+2022/12/22 14:42:07 Key: 3 and Value: 4
+2022/12/22 14:42:07 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 14:42:07 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 14:42:08 We found a value!
+2022/12/22 14:42:08 Response from server :5001: Get response: %!(EXTRA int32=4)
+2022/12/22 14:42:13 We found a value!
+2022/12/22 14:42:13 Response from server :5002: Get response: %!(EXTRA int32=4)
+2022/12/22 14:42:24 We found a value!
+2022/12/22 14:42:24 Response from server :5001: Get response: %!(EXTRA int32=4)
+2022/12/22 14:42:27 Key: 1 and Value: 200
+2022/12/22 14:42:27 Key: 3 and Value: 222
+2022/12/22 14:42:27 Key: 3 and Value: 222
+2022/12/22 14:42:27 Key: 1 and Value: 200
+2022/12/22 14:42:27 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 14:42:27 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 14:42:29 We found a value!
+2022/12/22 14:42:29 Response from server :5002: Get response: %!(EXTRA int32=222)
+2022/12/22 15:13:46 Server 5002: We are trying to listen calls from client: 5002
+2022/12/22 15:13:51 Server 5001: We are trying to listen calls from client: 5001
+2022/12/22 15:16:07 Response from server :5001: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = error reading from server: EOF)
+2022/12/22 15:16:07 Response from server :5002: Put failed: %!(EXTRA *status.Error=rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp :5002: connect: connection refused")
+2022/12/22 15:16:17 Server 5002: We are trying to listen calls from client: 5002
+2022/12/22 15:16:18 Server 5001: We are trying to listen calls from client: 5001
+2022/12/22 15:16:31 Key: 3 and Value: 3
+2022/12/22 15:16:31 Key: 3 and Value: 3
+2022/12/22 15:16:31 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 15:16:31 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 15:16:41 We found a value!
+2022/12/22 15:16:41 Response from server :5001: Get response: %!(EXTRA int32=3)
+2022/12/22 15:16:42 Key: 3 and Value: 40
+2022/12/22 15:16:46 We found a value!
+2022/12/22 15:16:46 Key: 3 and Value: 40
+2022/12/22 15:16:46 Response from server :5002: Get response: %!(EXTRA int32=3)
+2022/12/22 15:16:46 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 15:16:46 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 15:17:04 We found a value!
+2022/12/22 15:17:04 Response from server :5001: Get response: %!(EXTRA int32=40)
+2022/12/22 15:17:06 Key: 3 and Value: 100
+2022/12/22 15:17:09 We found a value!
+2022/12/22 15:17:09 Key: 3 and Value: 100
+2022/12/22 15:17:09 Response from server :5001: Put response: %!s(bool=true)
+2022/12/22 15:17:09 Response from server :5002: Get response: %!(EXTRA int32=40)
+2022/12/22 15:17:09 Response from server :5002: Put response: %!s(bool=true)
+2022/12/22 15:17:14 We found a value!
+2022/12/22 15:17:14 Response from server :5001: Get response: %!(EXTRA int32=100)
+2022/12/22 15:17:19 We found a value!
+2022/12/22 15:17:19 Response from server :5002: Get response: %!(EXTRA int32=100)

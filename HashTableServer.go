@@ -66,6 +66,7 @@ func main() {
 
 func (server *HashTableServer) Put(ctx context.Context, PutRequest *hashTable.PutRequest) (*hashTable.PutResponse, error) {
 	<-server.lock
+	time.Sleep(10 * time.Second)
 	success := true
 
 	server.ht[PutRequest.GetKey()] = PutRequest.GetValue()
@@ -80,7 +81,7 @@ func (server *HashTableServer) Put(ctx context.Context, PutRequest *hashTable.Pu
 func (server *HashTableServer) Get(ctx context.Context, GetRequest *hashTable.GetRequest) (*hashTable.GetResponse, error) {
 	//lock
 	<-server.lock
-	time.Sleep(5 * time.Second)
+	//time.Sleep(5 * time.Second)
 	for key, val := range server.ht {
 
 		if key == GetRequest.GetKey() {

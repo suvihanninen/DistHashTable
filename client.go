@@ -71,17 +71,17 @@ func main() {
 					log.Printf("Response from server %s: Put failed: ", port1, err)
 				}
 
-				response2, err := server2.Put(context.Background(), putRequest)
-				if err != nil {
-					log.Printf("Response from server %s: Put failed: ", port2, err)
-				}
-
 				if response1.GetResponse() == true {
 					log.Printf("Response from server %s: Put response: %s", port1, response1.GetResponse())
 					println("Response from server "+port1+": Put response: ", response1.GetResponse())
 				} else {
 					//log.Printf("Put failed on server %s . The response: ", port1, response1.GetResponse())
 					println("Response from server "+port1+": Put response: ", response1.GetResponse())
+				}
+
+				response2, err := server2.Put(context.Background(), putRequest)
+				if err != nil {
+					log.Printf("Response from server %s: Put failed: ", port2, err)
 				}
 
 				if response2.GetResponse() == true {
@@ -94,41 +94,16 @@ func main() {
 
 			} else if strings.Contains(text, "get") {
 				input := strings.Fields(text)
-				success1 := true
-				success2 := true
+
 				key, err := strconv.ParseInt(input[1], 10, 32)
 				if err != nil {
 					log.Fatalf("Problem with key: %v", err)
 				}
 
-				getRequest := &hashTable.GetRequest{
-					Key: int32(key),
-				}
-
-				response1, err := server1.Get(context.Background(), getRequest)
-				if err != nil {
-					log.Printf("Response from server %s: Get failed: ", port1, err)
-					success1 = false
-				}
-				if success1 {
-					log.Printf("Response from server %s: Get response: ", port1, response1.GetValue())
-					println("Response from server "+port1+": Get response: ", response1.GetValue())
-				} else {
-					//server 5001 has crached
-				}
-
-				response2, err := server2.Get(context.Background(), getRequest)
-				if err != nil {
-					log.Printf("Response from server %s: Get failed: ", port2, err)
-					success2 = false
-				}
-
-				if success2 {
-					log.Printf("Response from server %s: Get response: ", port2, response2.GetValue())
-					println("Response from server "+port2+": Get response: ", response2.GetValue())
-				} else {
-					//server 5002 has crached
-				}
+				result := get(key, server1, server2, port1, port2)
+				keyString := strconv.FormatInt(key, 10)
+				log.Printf("Response to GET request when key is %v: %v", input, result)
+				println("Response to GET request when key is "+keyString+": ", result)
 
 			} else {
 				println("Sorry didn't catch that, try again ")
@@ -140,6 +115,49 @@ func main() {
 
 	}
 
+}
+
+func get(key int64, server1 hashTable.HashTableClient, server2 hashTable.HashTableClient, port1 string, port2 string) int32 {
+	var result int32
+	success1 := true
+	success2 := true
+	result = 0
+
+	getRequest := &hashTable.GetRequest{
+		Key: int32(key),
+	}
+
+	response1, err := server1.Get(context.Background(), getRequest)
+	if err != nil {
+		log.Printf("Response from server %s: Get failed: ", port1, err)
+		success1 = false
+	}
+
+	response2, err := server2.Get(context.Background(), getRequest)
+	if err != nil {
+		log.Printf("Response from server %s: Get failed: ", port2, err)
+		success2 = false
+	}
+
+	if success2 && success1 {
+		println("response1: ", response1.GetValue())
+		println("response2: ", response2.GetValue())
+		println("Success 1 and 2 are true")
+		if response1.GetValue() == response2.GetValue() {
+			result = response1.GetValue()
+		} else {
+			println("PUT was not updated yet on both replicas, we will call GET again")
+			result = get(key, server1, server2, port1, port2)
+		}
+	} else if success1 {
+		println("Success 1 is true")
+		result = response1.GetValue()
+	} else {
+		println("Success 2 is true")
+		result = response2.GetValue()
+	}
+
+	return result
 }
 
 // sets the logger to use a log.txt file instead of the console
